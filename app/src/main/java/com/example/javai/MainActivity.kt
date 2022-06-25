@@ -1,12 +1,21 @@
 package com.example.javai
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.javai.R
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        val webView = WebView(this)
+
+        webView.settings.javaScriptEnabled=true
+
+        setContentView(webView)
+        webView.webViewClient = WebViewClient()
+        webView.loadUrl("https://google.com")
     }
 }

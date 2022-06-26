@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 val nameToDisplay = firstName.plus(" ").plus(lastName)
                 toastText.text = " ${getString(R.string.welcome_to_the_app)} $nameToDisplay"
             }else {
-                toastText.text = ""
+                toastText.text = " "
                 Toast.makeText(this, getString(R.string.please_enter_a_name), Toast.LENGTH_SHORT).show()
             }
         }

@@ -3,6 +3,5 @@
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="enter">Enter</string>
-    <string name="welcome_to_the_app">welcome to the app </string>
-    <string name="please_enter_a_name">please enter the full name ! </string>
+    <string name="please_enter_a_color">please enter the full color digits ! </string>
 </resources>
